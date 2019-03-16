@@ -1,0 +1,65 @@
+ {% extends "layout.html" %}
+
+{% block content %}
+
+ {% for post in posts4 %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ post.author }}</a>
+              <small class="text-muted">{{ post.date_posted }}</small>
+            </div>
+
+      
+
+          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRdkgPqEgQ5FUGgoUuVk22m6zkIgg2gBLIL0YCdacq6ZcnDWTFuQYquhVgvWMMmvqOdCIpgpNs9Xfp_/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+            </a> 
+
+          
+          </div>
+        </article>
+    {% endfor %}
+
+    {% for post in posts5 %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ post.author }}</a>
+              <small class="text-muted">{{ post.date_posted }}</small>
+            </div>
+
+         
+           <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQH3xbb4tc5mgjOXklvuUL6mqQfaCDOIxSUgTBpdhp_vFtEu2RACHhLhCaN56KUm_gm-fgxM-pMYG_q/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+            </a> 
+
+          
+          </div>
+        </article>
+
+
+    {% endfor %}
+
+    {% for post in posts6 %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ post.author }}</a>
+              <small class="text-muted">{{ post.date_posted }}</small>
+            </div>
+
+         
+           <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSvSGVYfDo0_uFmYaPe0j2hW_NNERHNd3oEEJclj7Hb5EIf15AmXEO0vvMqiNQ6t-gsuLDhiwgTARmo/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+            </a> 
+
+          
+          </div>
+        </article>
+
+
+    {% endfor %}
+
+
+    {% endblock content %}

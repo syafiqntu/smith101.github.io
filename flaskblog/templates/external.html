@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for post in posts3 %}
+        <article class="media content-section">
+          <div class="media-body">
+            <!-- <div class="article-metadata">
+              <a class="mr-2" href="#">{{ post.author }}</a>
+              <small class="text-muted">{{ post.date_posted }}</small>
+            </div> -->
+            <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+           
+            
+           <font size="5"><class="article-content">{{ post.content }}</font>
+
+           <br>
+
+
+          <a href="{{ url_for('static', filename='smithchart.mp4') }}">             
+
+          <font size="3">Smith Chart Video Tutorial</font>
+          </a> 
+
+          <br>
+          <br>
+
+          <font size="5">Smith Chart Basics Part I</font>
+          <br>
+          <a href="https://www.youtube.com/watch?v=hmqM8PnUkmo">Link To Video (Youtube)</a>
+
+          <br>
+          <br>
+
+          <font size="5">Smith Chart Basics Part II (Finding VSWR)</font>
+          <br>
+          <a href="https://www.youtube.com/watch?v=YbZ9RBw7-js">Link To Video (Youtube)</a>
+
+          <br>
+          <br>
+
+          <font size="5">Smith Chart Basics Part III (Finding Reflection Coefficient)</font>
+          <br>
+          <a href="https://www.youtube.com/watch?v=9KlIgae0ad8">Link To Video (Youtube)</a>
+
+
+
+
+            
+          
+
+          </div>
+        </article>
+    {% endfor %}
+
+{% endblock content %}
